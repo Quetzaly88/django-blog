@@ -34,6 +34,9 @@ class Comment(models.Model):
     body = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
+    #challenge = models.SlugField()  # New field with no arguments deebugging
+    #challenge = models.FloatField(default=3.0)  # Change to FloatField debugging
+    
     class Meta:
         ordering = ["created_on"]
 
